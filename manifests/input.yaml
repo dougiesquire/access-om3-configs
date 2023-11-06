@@ -1,11 +1,21 @@
 format: yamanifest
 version: 1.0
 ---
+work/input/Alk.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/Alk.nc
+  hashes:
+    binhash: c02bd96c9f85c602183e19c441e7b8d0
+    md5: eed848fda5ffec0b1bcb63c118981acc
 work/input/JRA55do-ESMFmesh.nc:
   fullpath: /g/data/ik11/inputs/access-om3/0.x.0/share/meshes/JRA55do-ESMFmesh.nc
   hashes:
     binhash: 1147443c3fe237a480af1b4700159e21
     md5: 1c8481b8c85f59b6cbfc2ed5bc24c77d
+work/input/Preind_DIC.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/Preind_DIC.nc
+  hashes:
+    binhash: cebf31a10827fefa9e342b26779bd1c5
+    md5: 5f0017c64a6c0d1f07021b1dc22de74b
 work/input/RYF.friver.1990_1991.nc:
   fullpath: /g/data/ik11/inputs/JRA-55/RYF/v1-4/RYF.friver.1990_1991.nc
   hashes:
@@ -86,6 +96,16 @@ work/input/iced.1900-01-01-10800.nc:
   hashes:
     binhash: 2dfb4fa5231df7e352155c266adb29c5
     md5: 87c012d60c58c65bb56caa98779e5e51
+work/input/init_ocean_cobalt.res.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/init_ocean_cobalt.res.nc
+  hashes:
+    binhash: a478d6dc4eeb933922bccef9aba490da
+    md5: 4e0fa0c5f1c5a344d472873f1d675e02
+work/input/init_ocean_cobalt_phyto_biomass.res.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/init_ocean_cobalt_phyto_biomass.res.nc
+  hashes:
+    binhash: 37dbef2b35ed9df0e5d599c4708b5a5f
+    md5: d4abae814fd88c7071399330ac829658
 work/input/kmt.nc:
   fullpath: /g/data/ik11/inputs/access-om3/0.x.0/1deg/cice/kmt.nc
   hashes:
@@ -676,3 +696,13 @@ work/input/topog.nc:
   hashes:
     binhash: 049d8b297efe931a1c1d3f40af23afea
     md5: 4e13d88001b646f3cf4f1c3b8db59f91
+work/input/woa13_all_o_annual_01.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_o_annual_01.nc
+  hashes:
+    binhash: 0510f922609f27add6810cfac5ebc859
+    md5: bf5668431d9d4894c7ae1129dac410c6
+work/input/woa13_all_p_annual_01.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_p_annual_01.nc
+  hashes:
+    binhash: c05b1ebdbe9157319dfe36a5b371c774
+    md5: c25c77690ed1265ba7a3ad6430eb7413

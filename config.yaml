@@ -2,29 +2,36 @@
 
 # If submitting to a different project to your default, uncomment line below 
 # and change project code as appropriate; also set shortpath below
-project: x77
+# project: x77
 
 # Force payu to always find, and save, files in this scratch project directory
 # (you may need to add the corresponding PBS -l storage flag in sync_data.sh)
-shortpath: /scratch/v45
+# shortpath: /scratch/v45
 
 queue: normal
 ncpus: 48
 jobfs: 10GB
 mem: 192GB
 
-walltime: 01:00:00
-jobname: 1deg_jra55do_ryf
+walltime: 00:30:00
+jobname: 1deg_jra55do_ryf_bling
 
 model: access-om3
 
-exe: /g/data/ik11/spack/0.20.1/opt/linux-rocky8-cascadelake/intel-2021.6.0/access-om3-main-lxbeca7/bin/access-om3-MOM6-CICE6
+# exe: /g/data/ik11/spack/0.20.1/opt/linux-rocky8-cascadelake/intel-2021.6.0/access-om3-main-lxbeca7/bin/access-om3-MOM6-CICE6
+exe: /g/data/tm70/ds0092/model/access-om3/bin/access-om3-MOM6-CICE6-b08f847-modified
 input: 
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/share # shared grids and topography
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/mom # grids, ICs etc
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/cice # grids, ICs etc
     - /g/data/ik11/inputs/access-om3/0.x.0/share/meshes/JRA55do-ESMFmesh.nc # mesh for JRA55-do stream
     - /g/data/ik11/inputs/JRA-55/RYF/v1-4 # datm and drof JRA55-do streams data
+    - /g/data/tm70/ds0092/model/inputs/access-om3/init_ocean_cobalt.res.nc
+    - /g/data/tm70/ds0092/model/inputs/access-om3/init_ocean_cobalt_phyto_biomass.res.nc
+    - /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_p_annual_01.nc
+    - /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_o_annual_01.nc
+    - /g/data/tm70/ds0092/model/inputs/access-om3/Preind_DIC.nc
+    - /g/data/tm70/ds0092/model/inputs/access-om3/Alk.nc
  
 collate: false
 runlog: false
