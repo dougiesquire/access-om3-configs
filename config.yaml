@@ -19,7 +19,7 @@ jobname: 1deg_jra55do_ryf_bling
 model: access-om3
 
 # exe: /g/data/ik11/spack/0.20.1/opt/linux-rocky8-cascadelake/intel-2021.6.0/access-om3-main-lxbeca7/bin/access-om3-MOM6-CICE6
-exe: /g/data/tm70/ds0092/model/access-om3/bin/access-om3-MOM6-CICE6-48a0e16-modified
+exe: /g/data/tm70/ds0092/model/access-om3/bin/access-om3-MOM6-CICE6-c75603c-modified
 input: 
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/share # shared grids and topography
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/mom # grids, ICs etc
@@ -32,6 +32,8 @@ input:
     - /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_o_annual_01.nc
     - /g/data/tm70/ds0092/model/inputs/access-om3/Preind_DIC.nc
     - /g/data/tm70/ds0092/model/inputs/access-om3/Alk.nc
+    - /g/data/tm70/ds0092/model/inputs/access-om3/RYF.co2.test.1990_1991.nc # bogus co2 datm stream
+    - /g/data/tm70/ds0092/model/inputs/access-om3/RYF.o2.test.1990_1991.nc # bogus o2 datm stream
  
 collate: false
 runlog: false

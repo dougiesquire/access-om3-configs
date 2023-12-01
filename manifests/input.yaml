@@ -16,6 +16,11 @@ work/input/Preind_DIC.nc:
   hashes:
     binhash: cebf31a10827fefa9e342b26779bd1c5
     md5: 5f0017c64a6c0d1f07021b1dc22de74b
+work/input/RYF.co2.test.1990_1991.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/RYF.co2.test.1990_1991.nc
+  hashes:
+    binhash: 1911a336050898d656425d593d58691d
+    md5: a377f928117b7d89a1fff8c70393d6eb
 work/input/RYF.friver.1990_1991.nc:
   fullpath: /g/data/ik11/inputs/JRA-55/RYF/v1-4/RYF.friver.1990_1991.nc
   hashes:
@@ -31,6 +36,11 @@ work/input/RYF.licalvf.1990_1991.nc:
   hashes:
     binhash: f219ce98f3fcbe6f8ec517740f01aee1
     md5: 6f927702cbc023cc20d3ddd69695f0a0
+work/input/RYF.o2.test.1990_1991.nc:
+  fullpath: /g/data/tm70/ds0092/model/inputs/access-om3/RYF.o2.test.1990_1991.nc
+  hashes:
+    binhash: 9ca02813e34e5a5eef57a1ff530d510d
+    md5: eef4b2cc94834b644e669ec17408c12f
 work/input/RYF.prra.1990_1991.nc:
   fullpath: /g/data/ik11/inputs/JRA-55/RYF/v1-4/RYF.prra.1990_1991.nc
   hashes:
