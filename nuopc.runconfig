@@ -116,12 +116,12 @@ ALLCOMP_attributes::
      hostname = gadi
      ice_ncat = 5
      mediator_present = true
-     mesh_atm = ./input/access-om2-1deg-nomask-ESMFmesh.nc
+     mesh_atm = ./INPUT/access-om2-1deg-nomask-ESMFmesh.nc
      mesh_glc = UNSET
-     mesh_ice = ./input/access-om2-1deg-ESMFmesh.nc
+     mesh_ice = ./INPUT/access-om2-1deg-ESMFmesh.nc
      mesh_lnd = UNSET
-     mesh_mask = ./input/access-om2-1deg-ESMFmesh.nc
-     mesh_ocn = ./input/access-om2-1deg-ESMFmesh.nc
+     mesh_mask = ./INPUT/access-om2-1deg-ESMFmesh.nc
+     mesh_ocn = ./INPUT/access-om2-1deg-ESMFmesh.nc
      model_version = unknown
      ocn2glc_coupling = .false.
      ocn2glc_levels = 1:10:19:26:30:33:35
@@ -138,7 +138,7 @@ ALLCOMP_attributes::
      tfreeze_option = linear_salt
      wav_coupling_to_cice = .false.
      write_restart_at_endofrun = .false.
-     additional_restart_dir = additional_restarts/
+     additional_restart_dir = RESTART/
 ::
 
 MED_attributes::
@@ -166,62 +166,27 @@ MED_attributes::
      glc2ocn_liq_rmapname = idmap
      glc_renormalize_smb = on_if_glc_coupled_fluxes
      gust_fac = 0.0D0
-     histaux_atm2med_file1_auxname = atm.1h.inst
+     histaux_ice2med_file1_auxname = ice.1step.inst
+     histaux_ice2med_file1_doavg = .false.
+     histaux_ice2med_file1_enabled = .false.
+     histaux_ice2med_file1_flds = all
+     histaux_ice2med_file1_history_n = 1
+     histaux_ice2med_file1_history_option = nsteps
+     histaux_ice2med_file1_ntperfile = 24
+     histaux_ocn2med_file1_auxname = ocn.1step.inst
+     histaux_ocn2med_file1_doavg = .false.
+     histaux_ocn2med_file1_enabled = .false.
+     histaux_ocn2med_file1_flds = all
+     histaux_ocn2med_file1_history_n = 1
+     histaux_ocn2med_file1_history_option = nsteps
+     histaux_ocn2med_file1_ntperfile = 24
+     histaux_atm2med_file1_auxname = atm.1step.inst
      histaux_atm2med_file1_doavg = .false.
      histaux_atm2med_file1_enabled = .false.
-     histaux_atm2med_file1_flds = Faxa_swndr:Faxa_swvdr:Faxa_swndf:Faxa_swvdf
+     histaux_atm2med_file1_flds = all
      histaux_atm2med_file1_history_n = 1
-     histaux_atm2med_file1_history_option = nhours
+     histaux_atm2med_file1_history_option = nsteps
      histaux_atm2med_file1_ntperfile = 24
-     histaux_atm2med_file2_auxname = atm.1h.avrg
-     histaux_atm2med_file2_doavg = .true.
-     histaux_atm2med_file2_enabled = .false.
-     histaux_atm2med_file2_flds = Sa_u:Sa_v
-     histaux_atm2med_file2_history_n = 1
-     histaux_atm2med_file2_history_option = nhours
-     histaux_atm2med_file2_ntperfile = 24
-     histaux_atm2med_file3_auxname = atm.3hprec.avrg
-     histaux_atm2med_file3_doavg = .true.
-     histaux_atm2med_file3_enabled = .false.
-     histaux_atm2med_file3_flds = Faxa_rainc:Faxa_rainl:Faxa_snowc:Faxa_snowl
-     histaux_atm2med_file3_history_n = 3
-     histaux_atm2med_file3_history_option = nhours
-     histaux_atm2med_file3_ntperfile = 8
-     histaux_atm2med_file4_auxname = atm.3h.avrg
-     histaux_atm2med_file4_doavg = .true.
-     histaux_atm2med_file4_enabled = .false.
-     histaux_atm2med_file4_flds = Sa_z:Sa_topo:Sa_u:Sa_v:Sa_tbot:Sa_ptem:Sa_shum:Sa_dens:Sa_pbot:Sa_pslv:Faxa_lwdn:Faxa_rainc:Faxa_rainl:Faxa_snowc:Faxa_snowl:Faxa_swndr:Faxa_swvdr:Faxa_swndf:Faxa_swvdf:Sa_co2diag:Sa_co2prog
-     histaux_atm2med_file4_history_n = 3
-     histaux_atm2med_file4_history_option = nhours
-     histaux_atm2med_file4_ntperfile = 8
-     histaux_atm2med_file5_auxname = atm.24h.avrg
-     histaux_atm2med_file5_doavg = .true.
-     histaux_atm2med_file5_enabled = .false.
-     histaux_atm2med_file5_flds = Faxa_bcph:Faxa_ocph:Faxa_dstwet:Faxa_dstdry:Sa_co2prog:Sa_co2diag
-     histaux_atm2med_file5_history_n = 3
-     histaux_atm2med_file5_history_option = nhours
-     histaux_atm2med_file5_ntperfile = 2
-     histaux_lnd2med_file1_auxname = lnd.ncpl.inst
-     histaux_lnd2med_file1_doavg = .false.
-     histaux_lnd2med_file1_enabled = .false.
-     histaux_lnd2med_file1_flds = all
-     histaux_lnd2med_file1_history_n = 1
-     histaux_lnd2med_file1_history_option = nsteps
-     histaux_lnd2med_file1_ntperfile = 1
-     histaux_ocn2med_file1_auxname = ocn.24h.avg
-     histaux_ocn2med_file1_doavg = .true.
-     histaux_ocn2med_file1_enabled = .false.
-     histaux_ocn2med_file1_flds = So_bldepth:So_t:So_u:So_v
-     histaux_ocn2med_file1_history_n = 1
-     histaux_ocn2med_file1_history_option = ndays
-     histaux_ocn2med_file1_ntperfile = 30
-     histaux_rof2med_file1_auxname = rof.24h.avrg
-     histaux_rof2med_file1_doavg = .true.
-     histaux_rof2med_file1_enabled = .false.
-     histaux_rof2med_file1_flds = all
-     histaux_rof2med_file1_history_n = 3
-     histaux_rof2med_file1_history_option = nhours
-     histaux_rof2med_file1_ntperfile = 2
      history_n_atm_avg = -999
      history_n_atm_inst = -999
      history_n_glc_avg = -999
@@ -329,7 +294,7 @@ OCN_attributes::
 
 ROF_attributes::
      Verbosity = off
-     mesh_rof = ./input/access-om2-1deg-nomask-ESMFmesh.nc
+     mesh_rof = ./INPUT/access-om2-1deg-nomask-ESMFmesh.nc
 ::
 
 WAV_attributes::

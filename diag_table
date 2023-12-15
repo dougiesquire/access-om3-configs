@@ -2,7 +2,6 @@
 1 1 1 0 0 0
 ### Section-1: File List
 #========================
-<<<<<<< HEAD
 # "access-om3.mom6.h.rho2%4yr-%2mo",                      1,  "months", 1, "days",   "time", 1, "months"
 # "access-om3.mom6.h.native%4yr-%2mo",                    1,  "months", 1, "days",   "time", 1, "months"
 # "access-om3.mom6.h.z%4yr-%2mo",                         1,  "months", 1, "days",   "time", 1, "months"
@@ -152,4 +151,8 @@
 "ocean_model", "cos_rot",     "cos_rot",     "access-om3.mom6.h.static", "all", ".false.", "none", 2
 
 # "access-om3.mom6.h.bling%4yr-%2mo-%2dy"
-"generic_bling", "fe_burial",  "fe_burial",    "access-om3.mom6.h.bling%4yr-%2mo-%2dy","all","mean","none",2
+"generic_bling", "co2_csurf",  "co2_csurf",    "access-om3.mom6.h.bling%4yr-%2mo-%2dy", "all", "mean", "none", 2
+"generic_bling", "co2_alpha",  "co2_alpha",    "access-om3.mom6.h.bling%4yr-%2mo-%2dy", "all", "mean", "none", 2
+"generic_bling", "fgco2_raw",  "fgco2_raw",    "access-om3.mom6.h.bling%4yr-%2mo-%2dy", "all", "mean", "none", 2
+# "generic_bling", "o2os_raw",   "o2os_raw",     "access-om3.mom6.h.bling%4yr-%2mo-%2dy", "all", "mean", "none", 2
+"generic_bling", "fgo2_raw",   "fgo2_raw",     "access-om3.mom6.h.bling%4yr-%2mo-%2dy", "all", "mean", "none", 2

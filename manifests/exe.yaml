@@ -1,8 +1,8 @@
 format: yamanifest
 version: 1.0
 ---
-work/access-om3-MOM6-CICE6-c75603c-modified:
-  fullpath: /g/data/tm70/ds0092/model/access-om3/bin/access-om3-MOM6-CICE6-c75603c-modified
+work/access-om3-MOM6-CICE6-077b954-modified:
+  fullpath: /g/data/tm70/ds0092/model/access-om3/bin/access-om3-MOM6-CICE6-077b954-modified
   hashes:
-    binhash: a0dbaedfe2be7dab44cab1d7a41d831b
-    md5: 8bfb9079559a82b3d74fc5c56ff3b516
+    binhash: 42cbc26904dd83f37b8cd58be144bfb7
+    md5: 1df482a888f36fe3412f6184145ceb50

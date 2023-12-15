@@ -39,3 +39,6 @@
     cf_compliance = .true.
 /
 
+&data_override_nml
+    debug_data_override = .true.
+/

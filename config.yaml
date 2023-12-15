@@ -19,21 +19,24 @@ jobname: 1deg_jra55do_ryf_bling
 model: access-om3
 
 # exe: /g/data/ik11/spack/0.20.1/opt/linux-rocky8-cascadelake/intel-2021.6.0/access-om3-main-lxbeca7/bin/access-om3-MOM6-CICE6
-exe: /g/data/tm70/ds0092/model/access-om3/bin/access-om3-MOM6-CICE6-c75603c-modified
+exe: /g/data/tm70/ds0092/model/access-om3/bin/access-om3-MOM6-CICE6-077b954-modified
 input: 
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/share # shared grids and topography
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/mom # grids, ICs etc
     - /g/data/ik11/inputs/access-om3/0.x.0/1deg/cice # grids, ICs etc
     - /g/data/ik11/inputs/access-om3/0.x.0/share/meshes/JRA55do-ESMFmesh.nc # mesh for JRA55-do stream
     - /g/data/ik11/inputs/JRA-55/RYF/v1-4 # datm and drof JRA55-do streams data
-    - /g/data/tm70/ds0092/model/inputs/access-om3/init_ocean_cobalt.res.nc
+    - /g/data/tm70/ds0092/model/inputs/access-om3/Alk.nc # BLING init file
+    - /g/data/tm70/ds0092/model/inputs/access-om3/grid_spec.nc # needed for data_override
     - /g/data/tm70/ds0092/model/inputs/access-om3/init_ocean_cobalt_phyto_biomass.res.nc
-    - /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_p_annual_01.nc
-    - /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_o_annual_01.nc
-    - /g/data/tm70/ds0092/model/inputs/access-om3/Preind_DIC.nc
-    - /g/data/tm70/ds0092/model/inputs/access-om3/Alk.nc
-    - /g/data/tm70/ds0092/model/inputs/access-om3/RYF.co2.test.1990_1991.nc # bogus co2 datm stream
-    - /g/data/tm70/ds0092/model/inputs/access-om3/RYF.o2.test.1990_1991.nc # bogus o2 datm stream
+    - /g/data/tm70/ds0092/model/inputs/access-om3/init_ocean_cobalt.res.nc # BLING init file
+    - /g/data/tm70/ds0092/model/inputs/access-om3/ocean_mosaic.nc # needed for data_override
+    - /g/data/tm70/ds0092/model/inputs/access-om3/Preind_DIC.nc # BLING init file
+    - /g/data/tm70/ds0092/model/inputs/access-om3/RYF.co2.test.1990_1991.nc # BLING bogus co2 datm stream
+    - /g/data/tm70/ds0092/model/inputs/access-om3/RYF.o2.test.1990_1991.nc # BLING bogus o2 datm stream
+    - /g/data/tm70/ds0092/model/inputs/access-om3/Soluble_Fe_Flux_PI.nc # BLING dry_dep_fed_flux for data override
+    - /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_o_annual_01.nc # BLING init file
+    - /g/data/tm70/ds0092/model/inputs/access-om3/woa13_all_p_annual_01.nc # BLING init file
  
 collate: false
 runlog: false
