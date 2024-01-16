@@ -3,7 +3,6 @@
   factorfn_data = "null"
   factorfn_mesh = "null"
   flds_co2 = .true.
-  flds_o2 = .true.
   flds_presaero = .false.
   flds_presndep = .false.
   flds_preso3 = .false.
