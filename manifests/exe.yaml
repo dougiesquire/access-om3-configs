@@ -4,5 +4,5 @@ version: 1.0
 work/access-om3-MOM6-CICE6:
   fullpath: /g/data/tm70/ds0092/model/access-om3/Release/bin/access-om3-MOM6-CICE6
   hashes:
-    binhash: 76db99e62997dd1609e2fa13c8b25e1d
-    md5: ae45d1c777cdfe2014d636a8c98fc62d
+    binhash: 7d9c8439a699231e896ae7eea91a8250
+    md5: e474dc0dfb39c8f01f22ca6bbdbde604
