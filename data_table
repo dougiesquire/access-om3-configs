@@ -1,0 +1,56 @@
+# MOM/FMS data table
+#
+# gridname | fieldname_code      | fieldname_file            | file_name                                           | ongrid    | factor
+# --------------------------------------------------------------------------------------------------------------------------------------
+"OCN"      , "p"                 , "ocnExp_Sa_pslv"          , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "sw_flux_nir_dir"   , "ocnExp_Foxx_swnet_idr"   , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "sw_flux_nir_dif"   , "ocnExp_Foxx_swnet_idf"   , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "sw_flux_vis_dir"   , "ocnExp_Foxx_swnet_vdr"   , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "sw_flux_vis_dif"   , "ocnExp_Foxx_swnet_vdf"   , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "lw_flux"           , "ocnExp_Foxx_lwnet"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "u_flux"            , "ocnExp_Foxx_taux"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "v_flux"            , "ocnExp_Foxx_tauy"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "t_flux"            , "ocnExp_Foxx_sen"         , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "q_flux"            , "ocnExp_Foxx_evap"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "lprec"             , "ocnExp_Faxa_rain"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "fprec"             , "ocnExp_Faxa_snow"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "runoff"            , "ocnExp_Foxx_rofl"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "frunoff"           , "ocnExp_Foxx_rofi"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "hrain"             , "ocnExp_Foxx_hrain"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "hsnow"             , "ocnExp_Foxx_hsnow"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "hrofl"             , "ocnExp_Foxx_hrofl"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "hrofi"             , "ocnExp_Foxx_hrofi"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "hevap"             , "ocnExp_Foxx_hevap"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "hcond"             , "ocnExp_Foxx_hcond"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "salt_flux"         , "ocnExp_Fioi_salt"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "seaice_melt_heat"  , "ocnExp_Fioi_melth"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "seaice_melt"       , "ocnExp_Fioi_meltw"       , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "mi"                , ""                        , ""                                                  , "none"    , 0.0
+"OCN"      , "ice_fraction"      , "ocnExp_Si_ifrac"         , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+"OCN"      , "u10_sqr"           , "ocnExp_So_duu10n"        , "./INPUT/access-om3.cpl.hi.ocn.1900-01-01-03600.nc" , "none"    , 1.0
+# "OCN"      , "p"                 , ""                        , ""                                                  , "none"    , 100000.0
+# "OCN"      , "sw_flux_nir_dir"   , ""                        , ""                                                  , "none"    , 30.0
+# "OCN"      , "sw_flux_nir_dif"   , ""                        , ""                                                  , "none"    , 30.0
+# "OCN"      , "sw_flux_vis_dir"   , ""                        , ""                                                  , "none"    , 30.0
+# "OCN"      , "sw_flux_vis_dif"   , ""                        , ""                                                  , "none"    , 30.0
+# "OCN"      , "lw_flux"           , ""                        , ""                                                  , "none"    , -30.0
+# "OCN"      , "u_flux"            , ""                        , ""                                                  , "none"    , 1.0
+# "OCN"      , "v_flux"            , ""                        , ""                                                  , "none"    , 1.0
+# "OCN"      , "t_flux"            , ""                        , ""                                                  , "none"    , -50.0
+# "OCN"      , "q_flux"            , ""                        , ""                                                  , "none"    , -3e-5
+# "OCN"      , "lprec"             , ""                        , ""                                                  , "none"    , 1e-4
+# "OCN"      , "fprec"             , ""                        , ""                                                  , "none"    , 2e-5
+# "OCN"      , "runoff"            , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "frunoff"           , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "hrain"             , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "hsnow"             , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "hrofl"             , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "hrofi"             , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "hevap"             , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "hcond"             , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "salt_flux"         , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "seaice_melt_heat"  , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "seaice_melt"       , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "mi"                , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "ice_fraction"      , ""                        , ""                                                  , "none"    , 1e-5
+# "OCN"      , "u10_sqr"           , ""                        , ""                                                  , "none"    , 100.0

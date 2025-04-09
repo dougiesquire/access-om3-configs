@@ -1697,9 +1697,6 @@ EVAP_CFL_LIMIT = 0.8            !   [nondim] default = 0.8
 MLD_EN_VALS = 3*0.0             !   [J/m2] default = 0.0
                                 ! The energy values used to compute MLDs.  If not set (or all set to 0.), the
                                 ! default will overwrite to 25., 2500., 250000.
-HREF_FOR_MLD = 0.0              !   [m] default = 0.0
-                                ! Reference depth used to calculate the potential density used to find the mixed
-                                ! layer depth based on a delta rho = 0.03 kg/m3.
 DIAG_MLD_DENSITY_DIFF = 0.1     !   [kg/m3] default = 0.1
                                 ! The density difference used to determine a diagnostic mixed layer depth,
                                 ! MLD_user, following the definition of Levitus 1982. The MLD is the depth at
@@ -2144,7 +2141,7 @@ HBD_REMAPPING_USE_OM4_SUBCELLS = False !   [Boolean] default = True
                                 ! If true, use the OM4 remapping-via-subcells algorithm for horizontal boundary
                                 ! diffusion. See REMAPPING_USE_OM4_SUBCELLS for details. We recommend setting
                                 ! this option to false.
-HBD_DEBUG = False               !   [Boolean] default = False
+HBD_DEBUG = True                !   [Boolean] default = True
                                 ! If true, write out verbose debugging data in the HBD module.
 OBSOLETE_DIAGNOSTIC_IS_FATAL = True !   [Boolean] default = True
                                 ! If an obsolete diagnostic variable appears in the diag_table, cause a FATAL
@@ -2158,7 +2155,7 @@ CALCULATE_APE = True            !   [Boolean] default = True
 WRITE_STOCKS = True             !   [Boolean] default = True
                                 ! If true, write the integrated tracer amounts to stdout when the energy files
                                 ! are written.
-MAXTRUNC = 0                    !   [truncations save_interval-1] default = 0
+MAXTRUNC = 10000                !   [truncations save_interval-1] default = 0
                                 ! The run will be stopped, and the day set to a very large value if the velocity
                                 ! is truncated more than MAXTRUNC times between energy saves.  Set MAXTRUNC to 0
                                 ! to stop if there is any truncation of velocities.
@@ -2311,9 +2308,84 @@ ALLOW_ICEBERG_FLUX_DIAGNOSTICS = False !   [Boolean] default = False
 ALLOW_FLUX_ADJUSTMENTS = False  !   [Boolean] default = False
                                 ! If true, allows flux adjustments to specified via the data_table using the
                                 ! component name 'OCN'.
-LIQUID_RUNOFF_FROM_DATA = False !   [Boolean] default = False
+LIQUID_RUNOFF_FROM_DATA = True  !   [Boolean] default = False
                                 ! If true, allows liquid river runoff to be specified via the data_table using
                                 ! the component name 'OCN'.
+P_FROM_DATA = True              !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+SW_FLUX_NIR_DIR_FROM_DATA = True !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+SW_FLUX_NIR_DIF_FROM_DATA = True !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+SW_FLUX_VIS_DIR_FROM_DATA = True !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+SW_FLUX_VIS_DIF_FROM_DATA = True !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+LW_FLUX_FROM_DATA = True        !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+U_FLUX_FROM_DATA = True         !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+V_FLUX_FROM_DATA = True         !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+T_FLUX_FROM_DATA = True         !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+Q_FLUX_FROM_DATA = True         !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+LPREC_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+FPREC_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+FRUNOFF_FROM_DATA = True        !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+HRAIN_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+HSNOW_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+HROFL_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+HROFI_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+HEVAP_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+HCOND_FROM_DATA = True          !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+SALT_FLUX_FROM_DATA = True      !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+SEAICE_MELT_HEAT_FROM_DATA = True !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+SEAICE_MELT_FROM_DATA = True    !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+MI_FROM_DATA = True             !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+ICE_FRACTION_FROM_DATA = True   !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
+U10_SQR_FROM_DATA = True        !   [Boolean] default = False
+                                ! If true, allows p to be specified via the data_table using the component name
+                                ! 'OCN'.
 
 ! === module MOM_restart ===
 
