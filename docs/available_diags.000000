@@ -2970,7 +2970,7 @@
     ! units: m
     ! cell_methods: xh:mean yh:mean zl:sum area:mean
     ! variants: {boundary_forcing_h,boundary_forcing_h_xyave}
-"boundary_forcing_h_tendency"  [Unused]
+"boundary_forcing_h_tendency"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_rho2,ocean_model_d2,ocean_model_z_d2,ocean_model_rho2_d2}
     ! dimensions: xh, yh, zl
     ! long_name: Cell thickness tendency due to boundary forcing
@@ -2991,27 +2991,27 @@
     ! units: psu s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {boundary_forcing_saln_tendency,boundary_forcing_saln_tendency_xyave}
-"boundary_forcing_heat_tendency"  [Unused]
+"boundary_forcing_heat_tendency"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_rho2,ocean_model_d2,ocean_model_z_d2,ocean_model_rho2_d2}
     ! dimensions: xh, yh, zl
     ! long_name: Boundary forcing heat tendency
     ! units: W m-2
     ! cell_methods: xh:mean yh:mean zl:sum area:mean
     ! variants: {boundary_forcing_heat_tendency,boundary_forcing_heat_tendency_xyave}
-"boundary_forcing_salt_tendency"  [Unused]
+"boundary_forcing_salt_tendency"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_rho2,ocean_model_d2,ocean_model_z_d2,ocean_model_rho2_d2}
     ! dimensions: xh, yh, zl
     ! long_name: Boundary forcing salt tendency
     ! units: kg m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:sum area:mean
     ! variants: {boundary_forcing_salt_tendency,boundary_forcing_salt_tendency_xyave}
-"boundary_forcing_heat_tendency_2d"  [Unused]
+"boundary_forcing_heat_tendency_2d"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Depth integrated boundary forcing of ocean heat
     ! units: W m-2
     ! cell_methods: xh:mean yh:mean area:mean
-"boundary_forcing_salt_tendency_2d"  [Unused]
+"boundary_forcing_salt_tendency_2d"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Depth integrated boundary forcing of ocean salt
@@ -3032,7 +3032,7 @@
     ! units: degC s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {frazil_temp_tendency,frazil_temp_tendency_xyave}
-"frazil_heat_tendency"  [Unused]
+"frazil_heat_tendency"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_rho2,ocean_model_d2,ocean_model_z_d2,ocean_model_rho2_d2}
     ! dimensions: xh, yh, zl
     ! long_name: Heat tendency due to frazil formation
@@ -3563,7 +3563,7 @@
     ! long_name: Sea Surface Absolute Salinity
     ! units: g kg-1
     ! cell_methods: xh:mean yh:mean area:mean
-"frazil"  [Unused] (CMOR equivalent is "hfsifrazil")
+"frazil"  [Used] (CMOR equivalent is "hfsifrazil")
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Heat from frazil formation
@@ -4732,14 +4732,14 @@
     ! dimensions: scalar
     ! long_name: Area averaged virtual liquid precip due to SSS restoring
     ! units: kg m-2 s-1
-"heat_content_frunoff"  [Unused]
+"heat_content_frunoff"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Heat content (relative to 0C) of solid runoff into ocean
     ! units: W m-2
     ! standard_name: temperature_flux_due_to_solid_runoff_expressed_as_heat_flux_into_sea_water
     ! cell_methods: xh:mean yh:mean area:mean
-"heat_content_lrunoff"  [Unused]
+"heat_content_lrunoff"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Heat content (relative to 0C) of liquid runoff into ocean
@@ -4802,7 +4802,7 @@
     ! units: W m-2
     ! standard_name: temperature_flux_due_to_rainfall_expressed_as_heat_flux_into_sea_water
     ! cell_methods: xh:mean yh:mean area:mean
-"heat_content_surfwater"  [Unused]
+"heat_content_surfwater"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Heat content (relative to 0degC) of net water crossing ocean surface (frozen+liquid)
@@ -4869,7 +4869,7 @@
     ! standard_name: surface_net_downward_longwave_flux
     ! cell_methods: xh:mean yh:mean area:mean
     ! variants: {LW,rlntds}
-"latent"  [Unused] (CMOR equivalent is "hflso")
+"latent"  [Used] (CMOR equivalent is "hflso")
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Latent heat flux into ocean due to fusion and evaporation (negative means ocean heat loss)
@@ -4889,7 +4889,7 @@
     ! units: W m-2
     ! cell_methods: xh:mean yh:mean area:mean
     ! variants: {latent_fprec_diag,hfsnthermds}
-"latent_frunoff"  [Unused] (CMOR equivalent is "hfibthermds")
+"latent_frunoff"  [Used] (CMOR equivalent is "hfibthermds")
     ! modules: {ocean_model,ocean_model_d2}
     ! dimensions: xh, yh
     ! long_name: Latent heat flux into ocean due to melting of icebergs
@@ -5015,7 +5015,7 @@
     ! long_name: Area integrated net downward longwave at sea water surface
     ! units: W
     ! variants: {total_lw,total_rlntds}
-"total_lat"  [Unused]
+"total_lat"  [Used]
     ! modules: ocean_model
     ! dimensions: scalar
     ! long_name: Area integrated surface downward latent heat flux

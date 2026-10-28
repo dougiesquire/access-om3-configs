@@ -210,6 +210,12 @@ diag_table:
             thkcello: # Cell Thickness
             Kd_interface: # Total diapycnal diffusivity at interfaces
             Kd_ePBL: # ePBL diapycnal diffusivity at interfaces
+            boundary_forcing_heat_tendency:
+            boundary_forcing_salt_tendency:
+            boundary_forcing_h_tendency:
+            agessc: # Ideal age tracer (native grid)
+            frazil_heat_tendency: # Heat tendency due to frazil formation
+            rsdoabsorb: # Convergence of penetrative shortwave flux (native grid)
 
     'monthly 2d fields':
         defaults:  # these can be overridden for individual fields below
@@ -244,6 +250,20 @@ diag_table:
             ficeberg: # Frozen runoff (calving) and iceberg melt into ocean
             ePBL_h_ML: # Surface boundary layer depth
             h_ML: # Surface mixed layer depth based on active turbulence
+            latent:
+            heat_content_surfwater:
+            boundary_forcing_heat_tendency_2d:
+            boundary_forcing_salt_tendency_2d:
+            frazil: # Heat from frazil formation (hfsifrazil)
+            latent_frunoff: # Latent heat flux due to melting of frozen runoff (hfibthermds)
+            heat_content_lrunoff: # Heat content (relative to 0C) of liquid runoff into ocean
+            heat_content_frunoff: # Heat content (relative to 0C) of solid runoff into ocean
+            SW: # Shortwave radiation flux into ocean
+            LW: # Longwave radiation flux into ocean
+            sensible: # Sensible heat flux into ocean
+            seaice_melt_heat: # Heat flux into ocean due to snow and sea ice melt/freeze
+            net_heat_coupler: # Surface ocean heat flux from SW+LW+latent+sensible+seaice_melt_heat (via the coupler)
+            LwLatSens: # Combined longwave, latent, and sensible heating at ocean surface
 
     'monthly 2d max fields':
         defaults:  # these can be overridden for individual fields below
@@ -349,3 +369,4 @@ diag_table:
             total_hfibthermds: # Area integrated latent heat flux due to melting icebergs
             total_hfsso: # Area integrated downward sensible heat flux
             total_seaice_melt_heat: # Area integrated surface heat flux from snow and sea ice melt
+            total_lat:
