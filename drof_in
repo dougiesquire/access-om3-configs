@@ -6,4 +6,5 @@
   ny_global = 324
   restfilm = "null"
   skip_restart_read = .false.
+  split_rofs = .true.
 /

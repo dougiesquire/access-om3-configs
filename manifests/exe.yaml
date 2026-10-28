@@ -2,7 +2,7 @@ format: yamanifest
 version: 1.0
 ---
 work/access-om3-MOM6-CICE6:
-  fullpath: /g/data/vk83/apps/spack/1.1/release/linux-x86_64_v4/access3-2026.03.002-arkg6foly5p2q3hj7asfpdibuv5nq4pn/bin/access-om3-MOM6-CICE6
+  fullpath: /g/data/vk83/prerelease/apps/spack/1.1/release/linux-x86_64_v4/access3-git.de6c7a1e3ad4a55a002009794a32a7ae150cdef2_2026.03.002-b7dw2vb7danoazs3j4d3e5m34vf4yabg/bin/access-om3-MOM6-CICE6
   hashes:
-    binhash: 4ba9996cbc3e32ad949bac61ecb39ccf
-    md5: 332ce572ba105d74b139b99dd7c8e8b3
+    binhash: d5d79e8fc49ac12daaedb8fcccbd549c
+    md5: 757f29e8b903b770f93bf21882df3c89
